@@ -24,18 +24,18 @@ function randomValue(min, max) { // min and max included
 
         let container=document.getElementById('fancy');
         console.log(container);
-        let h2=document.createElement('h2')
-        container.appendChild(h2)
-        h2.textContent=`Seattle`
+        let h2=document.createElement('h2');
+        container.appendChild(h2);
+        h2.textContent=`Seattle`;
         let nav=document.createElement('nav');
         container.appendChild(nav);
 
         for (let i=0 ; i<=13 ; i++){
             
             Seattle.getcustomerPer()
-            this.amountofCookies[i]=this.customerPer*this.avgCookies
-            this.customerPerArr[i]=this.customerPer
-            this.sumofcookies=this.sumofcookies+this.amountofCookies[i]
+            this.amountofCookies[i]=this.customerPer*this.avgCookies;
+            this.customerPerArr[i]=this.customerPer;
+            this.sumofcookies=this.sumofcookies+this.amountofCookies[i];
             let li=document.createElement('li');
             nav.appendChild(li);  
             li.textContent=`${this.workinghours[i]} : ${this.amountofCookies[i]}`;
@@ -44,7 +44,7 @@ function randomValue(min, max) { // min and max included
         
         let li=document.createElement('li');
         nav.appendChild(li);  
-        li.textContent=`Total : ${this.sumofcookies} `
+        li.textContent=`Total : ${this.sumofcookies} `;
 
         
     },
@@ -81,18 +81,18 @@ const Tokyo ={
 
         let container=document.getElementById('fancy');
         console.log(container);
-        let h2=document.createElement('h2')
-        container.appendChild(h2)
-        h2.textContent=`Tokyo`
+        let h2=document.createElement('h2');
+        container.appendChild(h2);
+        h2.textContent=`Tokyo`;
         let nav=document.createElement('nav');
         container.appendChild(nav);
 
         for (let i=0 ; i<=13 ; i++){
             
-            Tokyo.getcustomerPer()
-            this.amountofCookies[i]=this.customerPer*this.avgCookies
-            this.customerPerArr[i]=this.customerPer
-            this.sumofcookies=this.sumofcookies+this.amountofCookies[i]
+            Tokyo.getcustomerPer();
+            this.amountofCookies[i]=this.customerPer*this.avgCookies;
+            this.customerPerArr[i]=this.customerPer;
+            this.sumofcookies=this.sumofcookies+this.amountofCookies[i];
             let li=document.createElement('li');
             nav.appendChild(li);  
             li.textContent=`${this.workinghours[i]} : ${this.amountofCookies[i]}`;
@@ -130,7 +130,7 @@ const Dubai ={
     workinghours:['6 am ','7 am ','8 am ',' 9 am ',' 10 am ',' 11 am ', ' 12 pm ', '1 pm ',' 2 pm ',' 3 pm ', '4 pm',' 5 pm ',' 6 pm ',' 7 pm '  ],
     getcustomerPer:function(){
         this.customerPer= randomValue(this.mincustomer,this.maxcustomer);
-        console.log(this.customerPer)
+        console.log(this.customerPer);
     },
    
     
@@ -141,16 +141,16 @@ const Dubai ={
         console.log(container);
         let h2=document.createElement('h2')
         container.appendChild(h2)
-        h2.textContent=`Dubai`
+        h2.textContent=`Dubai`;
         let nav=document.createElement('nav');
         container.appendChild(nav);
 
         for (let i=0 ; i<=13 ; i++){
             
             Dubai.getcustomerPer()
-            this.amountofCookies[i]=this.customerPer*this.avgCookies
-            this.customerPerArr[i]=this.customerPer
-            this.sumofcookies=this.sumofcookies+this.amountofCookies[i]
+            this.amountofCookies[i]=this.customerPer*this.avgCookies;
+            this.customerPerArr[i]=this.customerPer;
+            this.sumofcookies=this.sumofcookies+this.amountofCookies[i];
             let li=document.createElement('li');
             nav.appendChild(li);  
             li.textContent=`${this.workinghours[i]} : ${this.amountofCookies[i]}`;
@@ -184,7 +184,7 @@ const Paris ={
     workinghours:['6 am ','7 am ','8 am ',' 9 am ',' 10 am ',' 11 am ', ' 12 pm ', '1 pm ',' 2 pm ',' 3 pm ', '4 pm',' 5 pm ',' 6 pm ',' 7 pm '  ],
     getcustomerPer:function(){
         this.customerPer= randomValue(this.mincustomer,this.maxcustomer);
-        console.log(this.customerPer)
+        console.log(this.customerPer);
     },
    
     
@@ -193,18 +193,18 @@ const Paris ={
 
         let container=document.getElementById('fancy');
         console.log(container);
-        let h2=document.createElement('h2')
-        container.appendChild(h2)
-        h2.textContent=`Paris`
+        let h2=document.createElement('h2');
+        container.appendChild(h2);
+        h2.textContent=`Paris`;
         let nav=document.createElement('nav');
         container.appendChild(nav);
 
         for (let i=0 ; i<=13 ; i++){
             
             Paris.getcustomerPer()
-            this.amountofCookies[i]=this.customerPer*this.avgCookies
-            this.customerPerArr[i]=this.customerPer
-            this.sumofcookies=this.sumofcookies+this.amountofCookies[i]
+            this.amountofCookies[i]=this.customerPer*this.avgCookies;
+            this.customerPerArr[i]=this.customerPer;
+            this.sumofcookies=this.sumofcookies+this.amountofCookies[i];
             let li=document.createElement('li');
             nav.appendChild(li);  
             li.textContent=`${this.workinghours[i]} : ${this.amountofCookies[i]}`;
@@ -213,7 +213,7 @@ const Paris ={
         
         let li=document.createElement('li');
         nav.appendChild(li);  
-        li.textContent=`Total : ${this.sumofcookies} `
+        li.textContent=`Total : ${this.sumofcookies} `;
 
         
     },
@@ -250,18 +250,18 @@ const Lima ={
 
         let container=document.getElementById('fancy');
         console.log(container);
-        let h2=document.createElement('h2')
-        container.appendChild(h2)
-        h2.textContent=`Lima`
+        let h2=document.createElement('h2');
+        container.appendChild(h2);
+        h2.textContent=`Lima`;
         let nav=document.createElement('nav');
         container.appendChild(nav);
 
         for (let i=0 ; i<=13 ; i++){
             
-            Lima.getcustomerPer()
-            this.amountofCookies[i]=this.customerPer*this.avgCookies
-            this.customerPerArr[i]=this.customerPer
-            this.sumofcookies=this.sumofcookies+this.amountofCookies[i]
+            Lima.getcustomerPer();
+            this.amountofCookies[i]=this.customerPer*this.avgCookies;
+            this.customerPerArr[i]=this.customerPer;
+            this.sumofcookies=this.sumofcookies+this.amountofCookies[i];
             let li=document.createElement('li');
             nav.appendChild(li);  
             li.textContent=`${this.workinghours[i]} : ${this.amountofCookies[i]}`;
@@ -270,7 +270,7 @@ const Lima ={
         
         let li=document.createElement('li');
         nav.appendChild(li);  
-        li.textContent=`Total : ${this.sumofcookies} `
+        li.textContent=`Total : ${this.sumofcookies} `;
 
         
     },
