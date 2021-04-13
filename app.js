@@ -117,14 +117,18 @@ function Stores(names,maxcustomer,mincustomer,avgCookies){
         let hoursum=document.createElement('td')
             headerRow3.appendChild(hoursum)
             hoursum.textContent="  "
-        
+           let  sumtotal=0;
 
         for (let i = 0; i < sumhors.length; i++) {
             let hoursum=document.createElement('td')
             headerRow3.appendChild(hoursum)
             hoursum.textContent=sumhors[i]
+            sumtotal=sumtotal+sumhors[i]
             
         }
+        let sumofTotals=document.createElement('td');
+            headerRow3.appendChild(sumofTotals);
+            sumofTotals.textContent=sumtotal
 
 
 
