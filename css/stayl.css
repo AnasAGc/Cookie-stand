@@ -50,16 +50,31 @@ nav ul li a {
     padding:20px;
     padding-top:0;
 }
+#botom-left{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+#botom-right{
+
+    float: right;
+    width: 50%;
+    padding:10px;
+    display: inline-block;
+}
 
 
-table,tr{
-
+td,th,tr{
 
     border: 1px solid black;
-    width: 75%;
-    text-align: justify;
+    width: 80%;
+    padding-right: 110px;
 }
 table {
+    text-align: center;
     margin-top: 30px;
     margin-right: 2010px;
 }
@@ -69,9 +84,19 @@ table {
 
     padding: 30px;
     margin-bottom: 20px;
-
 }
 
+.raw1{
+
+    float: left;
+    
+}
+.column {
+
+flex: 50%;
+padding: 10px;
+
+}
 
 footer{
     clear: both;
