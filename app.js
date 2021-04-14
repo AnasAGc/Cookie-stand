@@ -62,8 +62,68 @@ function Stores(names,maxcustomer,mincustomer,avgCookies){
 
 };
 
+const form =document.getElementById('storForm')
 
 
+form.addEventListener('submit',handleSubmitting);
+
+
+
+function handleSubmitting(event){
+    event.preventDefault();
+    // console.log(event);
+    
+
+    let Storelocation =event.target.Locationfield.value;
+    let newMax = parseInt(event.target.MaxField.value);
+    console.log(newMax,Storelocation)
+    let newMin = parseInt(event.target.minField.value);
+    let newAvg = parseFloat(event.target.avgField.value);
+    document.querySelector("headerRow3".deleteCell)
+
+    let newStore = new Stores(Storelocation,newMax,newMin,newAvg);
+    
+        newStore.amountofCookiess()
+
+        newStore.rander();
+
+        headerRow3.remove();
+
+
+        
+   
+        let sumhors=[0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+
+        for (let i = 0; i < arryofObject.length; i++) {
+            
+            arryofObject[i].amountofCookiess();
+
+            for (let j = 0; j < 14; j++) {
+
+                sumhors[j]=sumhors[j] + arryofObject[i].amountofCookies[j]
+                
+            }
+
+        }
+
+        for (let i = 0; i < sumhors.length; i++) {
+            let hoursum=document.createElement('td')
+            headerRow3.appendChild(hoursum)
+            hoursum.textContent=sumhors[i]
+            sumtotal=sumtotal+sumhors[i]
+            
+        }
+        let sumofTotals=document.createElement('td');
+            headerRow3.appendChild(sumofTotals);
+            sumofTotals.textContent=sumtotal
+      
+            
+      
+
+    
+
+}
 
     let seattle = new Stores('seattle',65,23,6.3,0);
     let Tokyo   = new Stores('Tokyo',24,3,1.2);
@@ -71,10 +131,9 @@ function Stores(names,maxcustomer,mincustomer,avgCookies){
     let Paris   = new Stores('Paris',38,20,2.3);
     let Lima   = new Stores('Lima',16,2,4.6);
 
-
-
-
-
+   
+//////// for the Table 
+      
     let container=document.getElementById('fancy')
     let table = document.createElement('table');
       container.appendChild(table)
@@ -108,9 +167,6 @@ function Stores(names,maxcustomer,mincustomer,avgCookies){
 
 
         };
-        console.log(sumhors);
-
-        console.log(arryofObject);
 
         let headerRow3 = document.createElement('tr');
         table.appendChild(headerRow3)
@@ -131,6 +187,11 @@ function Stores(names,maxcustomer,mincustomer,avgCookies){
             sumofTotals.textContent=sumtotal
 
 
+
+//////// for the Table 
+      
+            
+      
 
 
 
