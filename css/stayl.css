@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+    font-family:inherit;
+    padding: 10px;
+}
+header{
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+    background-color: #ff8303;
+    color: whitesmoke;
+}
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0e3ca;
+    
+}
+nav ul{
+    position: relative;
+}
+
+nav ul li {
+   float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    margin-left: 450px;
+}
+
+#left{
+    float: left;
+    width: 75%;
+}
+
+#right{
+    float: right;
+    width: 25%;
+    background-color: #f3f3f3;
+    padding:20px;
+    padding-top:0;
+}
+#botom-left{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+#botom-right{
+
+    float: right;
+    width: 50%;
+    padding:10px;
+    display: inline-block;
+}
+
+
+td,th,tr{
+
+    border: 1px solid black;
+    width: 80%;
+    padding-right: 110px;
+}
+table {
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 2010px;
+    background-color: wheat;
+    
+}
+
+
+.card {
+
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.raw1{
+
+    float: left;
+    
+}
+.column {
+
+flex: 50%;
+padding: 10px;
+
+}
+
+footer{
+    clear: both;
+}
+
+footer p {
+
+    padding: 20px;
+    text-align: center;
+    background-color: #f0e3ca;
+}
