@@ -107,16 +107,19 @@ function handleSubmitting(event){
 
         }
 
-        for (let i = 0; i < sumhors.length; i++) {
-            let hoursum=document.createElement('td')
-            headerRow3.appendChild(hoursum)
-            hoursum.textContent=sumhors[i]
-            sumtotal=sumtotal+sumhors[i]
+            let headerRow3 = document.createElement('tr');
+            table.appendChild(headerRow3)     
+           
+              for (let i = 0; i < sumhors.length; i++) {
+               let hoursum=document.createElement('td')
+               headerRow3.appendChild(hoursum)
+                hoursum.textContent=sumhors[i]
+               sumtotal=sumtotal+sumhors[i]
             
         }
-        let sumofTotals=document.createElement('td');
-            headerRow3.appendChild(sumofTotals);
-            sumofTotals.textContent=sumtotal
+             let sumofTotals=document.createElement('td');
+              headerRow3.appendChild(sumofTotals);
+             sumofTotals.textContent=sumtotal
       
             
       
@@ -173,8 +176,8 @@ function handleSubmitting(event){
         let hoursum=document.createElement('td')
             headerRow3.appendChild(hoursum)
             hoursum.textContent="  "
-           let  sumtotal=0;
-
+          
+            let  sumtotal=0;
         for (let i = 0; i < sumhors.length; i++) {
             let hoursum=document.createElement('td')
             headerRow3.appendChild(hoursum)
@@ -185,7 +188,6 @@ function handleSubmitting(event){
         let sumofTotals=document.createElement('td');
             headerRow3.appendChild(sumofTotals);
             sumofTotals.textContent=sumtotal
-
 
 
 //////// for the Table 

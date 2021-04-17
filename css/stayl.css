@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
     box-sizing: border-box;
+}
+h1{
+    font-family: 'Anton', sans-serif;
 }
 body{
     background-color: whitesmoke;
@@ -77,6 +82,8 @@ table {
     text-align: center;
     margin-top: 30px;
     margin-right: 2010px;
+    background-color: wheat;
+    
 }
 
 
